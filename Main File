@@ -1,0 +1,27 @@
+control=input('Is the response controlled by an SD or EO?\n')
+if control not in ('EO', 'SD','eo','sd'):
+    print('\nincorrect user response')
+if control =='EO' or control =='eo' :
+    print('\nIt is a mand.')
+if control=='SD' or control=='sd':
+    SD=input('\nIs the SD verbal or nonverbal?\n')
+    if SD not in ('verbal', 'nonverbal','Verbal','Nonverbal'):
+        print ('\nincorrect user response')
+    if SD=='nonverbal' or SD =='Nonverbal':
+        print ('\nIt is a tact.')
+    if SD=='verbal' or SD=='Verbal':
+        p2p=input('\nIs there point-to-point correspondence, yes or no?\n')
+        if p2p not in ('yes', 'no', 'Yes', 'No'):
+            print ('\nincorrect user response')
+        if p2p=='no' or p2p== 'No':
+                print('\nIt is an intraverbal.')
+        if p2p=='yes' or p2p=='Yes':
+                formal=input('\nIs there formal similarity, yes or no?\n')
+                if formal not in ('yes', 'no', 'Yes', 'No'):
+                    print ('\nincorrect user response')
+                if formal=='yes' or formal== 'Yes':
+                        print ('\nIt is duplic.')
+                if formal=='no' or formal=='No':
+                        print('\nIt is codic.')      
+                
+                
